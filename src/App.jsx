@@ -6,23 +6,7 @@ const App = () => {
   const exercises2 = 7
   const part3 = 'State of a component'
   const exercises3 = 14
-  /*
-  return (
-    <div>
-      <h1>{course}</h1>
-      <p>
-        {part1} {exercises1}
-      </p>
-      <p>
-        {part2} {exercises2}
-      </p>
-      <p>
-        {part3} {exercises3}
-      </p>
-      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
-    </div>
-  )
-  */
+ 
  return (
   <div>
     <Header course = {course} />
@@ -45,14 +29,14 @@ const Content = (props) => {
   console.log(props)
   return (
     <>
-      <Exercise part = {props.part1} exercise = {props.exercise1}/>
-      <Exercise part = {props.part2} exercise = {props.exercise2}/>
-      <Exercise part = {props.part3} exercise = {props.exercise3}/>
+      <Part part = {props.part1} exercise = {props.exercise1}/>
+      <Part part = {props.part2} exercise = {props.exercise2}/>
+      <Part part = {props.part3} exercise = {props.exercise3}/>
     </>
   )
 }
 
-const Exercise = (props) =>{
+const Part = (props) =>{
   console.log("Hello from the Exercise component")
   console.log(props)
   return(
